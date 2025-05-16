@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Web Page</title>
-  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" />
 </head>
 <body>
-  <header>Header content</header>
-  <main>Main content</main>
-  <aside>Sidebar content</aside>
-  <footer>Footer content</footer>
+
+    <header>
+        <div class="logo">職能發展學院</div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">課程規劃</a></li>
+                <li><a href="#">最新訊息</a></li>
+                <li><a href="#">交通資訊</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+        <div class="menu-btn">☰</div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">課程規劃</a></li>
+            <li><a href="#">最新訊息</a></li>
+            <li><a href="#">交通資訊</a></li>
+            <li><a href="#">聯絡我們</a></li>
+        </ul>
+    </div>
+
+    <main>歡迎來到>職能發展學院</main>
+
+    <footer>
+        <p>&copy; 2024 職能發展學院. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>
-
-
