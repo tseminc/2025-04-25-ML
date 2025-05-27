@@ -1,0 +1,127 @@
+.main-footer {
+    background-color: #e0f2f7;
+    /* Light blue background, adjust as needed */
+    color: #333;
+    /* Dark text color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally by default */
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute items evenly */
+    width: 100%;
+    max-width: 1200px;
+    /* Optional: set a maximum width for the footer content */
+    margin-bottom: 20px;
+    /* Add some spacing between sections */
+}
+
+.footer-left {
+    align-items: center;
+}
+
+.footer-logo {
+    max-height: 30px;
+    /* Adjust logo size */
+    margin-right: 10px;
+}
+
+.footer-company-name {
+    font-weight: bold;
+}
+
+.footer-middle {
+    flex-grow: 1;
+    /* Allow middle section to take up more space */
+}
+
+.footer-column {
+    margin: 0 15px;
+    text-align: center;
+    /* Center text within columns */
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+    /* Example heading color */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-column a:hover {
+    color: #007bff;
+}
+
+.footer-right {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.app-icon {
+    max-height: 40px;
+    /* Adjust app icon size */
+    margin: 5px;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    /* Add a top border for separation */
+    font-size: 0.8em;
+    color: #777;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 15px;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+
+    .footer-middle {
+        width: 80%;
+        /* Adjust width for better layout on smaller screens */
+    }
+}

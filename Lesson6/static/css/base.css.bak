@@ -1,0 +1,170 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #86ABC2;
+        /* Light gray background */
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.desktop-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.desktop-nav ul li {
+    margin-left: 20px;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:active {
+    text-decoration: none;
+    color: white;
+    background-color: #2633eb;
+}
+
+.menu-btn {
+    display: none;
+    /* Initially hidden on desktop */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Mobile menu is hidden by default */
+.mobile-menu {
+    display: none;
+    /* Styles for positioning and appearance will be applied when shown */
+    top: 60px;
+    /* Adjust as needed */
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    padding: 20px;
+    height: 200px;
+}
+
+.main-footer {
+    background-color: #86ABC2;
+    /* Light blue background, adjust as needed */
+    color: #333;
+    /* Dark text color */
+    /* padding-left: 20px; */
+    /*display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* Center content horizontally by default */
+}
+
+.main-footer ul
+{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.main-footer lb
+{
+    padding-left: 50px;
+}
+
+.main-footer img
+{
+    padding-top: 20px;;
+}
+
+.footer-bottom 
+{
+    color:black;
+    height: 50px;;
+    text-align: right;
+    border-top: 1px solid black;
+    padding-right: 30px;
+    /*
+    width: 100%;
+    max-width: 1200px;
+
+    padding-top: 10px;
+ */
+    /* Add a top border for separation */
+    font-size: 0.8em;
+}
+
+/*
+footer {
+    background-color: #86ABC2;
+        /* Same as header */
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    /* Add some space above the footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}*/
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+        /* Hide desktop nav on mobile */
+    }
+
+    .menu-btn {
+        display: block;
+        /* Show menu button on mobile */
+    }
+
+    /* Show mobile menu when the 'mobile-menu-open' class is added by JS */
+    .mobile-menu.mobile-menu-open {
+        display: block;
+        /* Make it visible */
+        background-color: #f0f0f0;
+        padding: 20px;
+        position: absolute;
+        /* Position it relative to the viewport or nearest positioned ancestor */
+        width: 100%;
+    }
+}
