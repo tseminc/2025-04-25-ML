@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('tab-item')) {
-            event.preventDefault(); // <--- 加這一行
             tabs.forEach(tab => tab.classList.remove('active'));
             event.target.classList.add('active');
         }
